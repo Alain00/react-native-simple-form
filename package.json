@@ -2,7 +2,10 @@
   "name": "@alan/react-native-simple-form",
   "version": "1.0.0",
   "description": "A simple form for react native",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
