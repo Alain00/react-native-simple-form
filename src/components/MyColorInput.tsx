@@ -4,6 +4,7 @@ import { View, TouchableOpacity, TextInput as RNTextInput, Slider } from 'react-
 import { TextInputProps } from 'react-native-paper/lib/typescript/src/components/TextInput/TextInput';
 import { ColorPicker, fromHsv } from 'react-native-color-picker';
 import { Theme } from 'react-native-paper/lib/typescript/src/types';
+import {} from '@alan/react-native-simple-form';
 
 type Props = {
     theme: Theme,

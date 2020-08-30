@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "A simple form for react native",
   "main": "dist/index.js",
+  "author": "<ilpadronexd@gmail.com>",
   "files": [
     "dist"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
   "license": "ISC",
   "dependencies": {
+    "@alan/react-native-simple-form": "git+https://github.com/Alain00/react-native-simple-form.git",
     "@expo/vector-icons": "^10.2.1",
     "@react-navigation/native": "^5.7.3",
     "react": "^16.13.1",

@@ -9,6 +9,7 @@
       "noEmit": false,
       "target": "esnext",
       "skipLibCheck": true,
+      "declaration": true,
       "outDir": "dist"
     },
     "include": [
