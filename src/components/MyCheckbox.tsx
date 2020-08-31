@@ -10,7 +10,7 @@ interface Props{
     onCustomChange?: (value: boolean) => void
 }
 
-const MyCheckbox = ({...props}: Props) => {
+export const MyCheckbox = ({...props}: Props) => {
     const [checked, setChecked] = useState(false);
     const theme = useTheme()
 
@@ -44,5 +44,3 @@ const MyCheckbox = ({...props}: Props) => {
         </View>
     )
 }
-
-export default MyCheckbox;

@@ -20,7 +20,7 @@ type Props = {
 // }
 // const MyTextAnimated = Animated.createAnimatedComponent(Text);
 
-const MyInput = React.forwardRef<TextInput, Props>(
+export const MyInput = React.forwardRef<TextInput, Props>(
     ({...props}, ref) : React.ReactElement => {
         const theme = useTheme()
         const [focused, setFocused] = useState(new Animated.Value(0))

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Switch } from 'react-native-paper';
 import { useTheme } from '@react-navigation/native';
 import { View, Text, TouchableOpacity } from 'react-native';
-const MyCheckbox = ({ ...props }) => {
+export const MyCheckbox = ({ ...props }) => {
     const [checked, setChecked] = useState(false);
     const theme = useTheme();
     useEffect(() => {
@@ -28,4 +28,3 @@ const MyCheckbox = ({ ...props }) => {
             <Switch color={theme.colors.card} value={checked} onValueChange={handlePress}/>
         </View>);
 };
-export default MyCheckbox;

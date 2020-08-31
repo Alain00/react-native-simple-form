@@ -20,5 +20,5 @@ export interface ErrorsMap {
 export interface DefaultValuesMap {
     [index: string]: string;
 }
-declare const MyForm: ({ children, validation, ...props }: Props) => JSX.Element;
+export declare const MyForm: ({ children, validation, ...props }: Props) => JSX.Element;
 export default MyForm;

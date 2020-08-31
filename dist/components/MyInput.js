@@ -7,7 +7,7 @@ import { View, Text, TextInput, Animated } from 'react-native';
 //     }
 // }
 // const MyTextAnimated = Animated.createAnimatedComponent(Text);
-const MyInput = React.forwardRef(({ ...props }, ref) => {
+export const MyInput = React.forwardRef(({ ...props }, ref) => {
     const theme = useTheme();
     const [focused, setFocused] = useState(new Animated.Value(0));
     const [value, setValue] = useState(props.value);

@@ -2,6 +2,13 @@ import React from 'react';
 import { StyleProp, TextStyle, TextInputProps, TextInput } from 'react-native';
 import { FieldError } from 'react-hook-form';
 import { Theme } from 'react-native-paper/lib/typescript/src/types';
+export declare const MyInput: React.ForwardRefExoticComponent<{
+    name?: string;
+    error?: FieldError | undefined;
+    style?: StyleProp<TextStyle>;
+    theme: Theme;
+    label?: string;
+} & TextInputProps & React.RefAttributes<TextInput>>;
 declare const _default: (React.ComponentClass<Pick<{
     name?: string;
     error?: FieldError;

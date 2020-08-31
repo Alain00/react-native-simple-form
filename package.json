@@ -1,9 +1,10 @@
 {
-  "name": "@alan/react-native-simple-form",
+  "name": "@alain00/react-native-simple-form",
   "version": "1.0.0",
   "description": "A simple form for react native",
   "main": "dist/index.js",
   "author": "<ilpadronexd@gmail.com>",
+  "repository": "https://github.com/Alain00/react-native-simple-form.git",
   "files": [
     "dist"
   ],

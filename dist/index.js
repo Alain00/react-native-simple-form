@@ -1,3 +1,3 @@
-export * from "./components/MyCheckbox";
-export * from "./components/MyForm";
-export * from "./components/MyInput";
+export { MyCheckbox } from "./components/MyCheckbox";
+export { MyForm } from "./components/MyForm";
+export { MyInput } from "./components/MyInput";

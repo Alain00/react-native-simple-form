@@ -2,7 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { View, Text } from 'react-native';
 import { Controller } from "react-hook-form";
 import { Colors } from 'react-native-paper';
-const MyForm = ({ children, validation, ...props }) => {
+export const MyForm = ({ children, validation, ...props }) => {
     const { register, setValue, control, errors, getValues, trigger } = props.formOptions;
     const modChild = useCallback((child) => {
         if (child?.props?.name) {

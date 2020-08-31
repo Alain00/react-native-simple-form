@@ -5,5 +5,5 @@ interface Props {
     label?: string;
     onCustomChange?: (value: boolean) => void;
 }
-declare const MyCheckbox: ({ ...props }: Props) => JSX.Element;
-export default MyCheckbox;
+export declare const MyCheckbox: ({ ...props }: Props) => JSX.Element;
+export {};

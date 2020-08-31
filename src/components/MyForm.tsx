@@ -3,7 +3,6 @@ import { View, Text, StyleProp, ViewStyle } from 'react-native';
 import MyInput from './MyInput';
 import { useForm, Controller, FieldError, ValidationRules, UseFormMethods } from "react-hook-form";
 import { Colors } from 'react-native-paper';
-import MyCheckbox from './MyCheckbox';
 import MyPicker from './MyPicker';
 
 interface Props{
@@ -28,7 +27,7 @@ export interface DefaultValuesMap{
 }
 
 
-const MyForm = ({children, validation,...props}: Props) => {
+export const MyForm = ({children, validation,...props}: Props) => {
     const { register, setValue, control, errors, getValues,  trigger} = props.formOptions;
     
     const modChild = useCallback((child: any) => {
