@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Checkbox, Switch } from 'react-native-paper';
 import { useTheme } from '@react-navigation/native';
 import { View, Text, TouchableOpacity } from 'react-native';
-
+ 
 interface Props{
     name?: string,
     setValue?: (name: string, value: any) => void,
