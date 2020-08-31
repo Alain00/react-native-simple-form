@@ -11,6 +11,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+        env:
+          NPM_TOKEN: ${{secrets.TOKEN}}
       - run: export NPM_TOKEN="${{ secrets.TOKEN }}"
       - run: npm i
       - run: source ~/.profile
