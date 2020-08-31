@@ -12,5 +12,5 @@ declare type Props = {
     triggerValidation?: (name: string | string[]) => Promise<boolean>;
     onCustomChange?: (value: any) => void;
 };
-declare const MyPicker: React.ForwardRefExoticComponent<Props & React.RefAttributes<any>>;
+export declare const MyPicker: React.ForwardRefExoticComponent<Props & React.RefAttributes<any>>;
 export default MyPicker;

@@ -12,7 +12,7 @@ type Props = {
     setValue?: (name: string, value: any) => void
 } & TextInputProps;
 
-const MyColorInput = React.forwardRef<any, Props>(
+export const MyColorInput = React.forwardRef<any, Props>(
     ({...props}, ref) => {
         const [visible, setVisible] = useState(false);
         const [color, setColor] = useState(props.defaultValue || "#ff0000");

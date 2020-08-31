@@ -7,7 +7,7 @@ import { View, Text } from 'react-native';
 //         type: "required", message: "Este campo es requerido"
 //     }
 // }
-const MyPicker = React.forwardRef(({ ...props }, ref) => {
+export const MyPicker = React.forwardRef(({ ...props }, ref) => {
     const [value, setValue] = useState();
     const handleValueChange = (value, index) => {
         if (props.setValue)

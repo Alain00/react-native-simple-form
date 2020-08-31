@@ -24,7 +24,7 @@ type Props = {
 //     }
 // }
 
-const MyPicker = React.forwardRef<any, Props>(
+export const MyPicker = React.forwardRef<any, Props>(
     ({...props}, ref) : React.ReactElement => {
         const [value, setValue] = useState<string>()
         const handleValueChange = (value: any, index: number) => {

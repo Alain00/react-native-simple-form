@@ -1,2 +1,20 @@
-declare const _default: () => any;
-export default _default;
+import React from 'react';
+import { TextInput as TextInputNative } from 'react-native';
+declare type Props = {
+    label: string;
+    name: string;
+    disabled?: boolean;
+    mode?: 'date' | 'time' | 'datetime';
+    minDate?: Date;
+    maxDate?: Date;
+    minuteInterval?: number;
+    timeFormat?: string;
+    dateFormat?: string;
+    dateTimeFormat?: string;
+    visible?: boolean;
+    defautlValue?: string;
+    setValue?: (name: string, value: string) => void;
+    onMyChange?: (value: string) => void;
+};
+export declare const MyDatePicker: React.ForwardRefExoticComponent<Props & React.RefAttributes<TextInputNative>>;
+export default MyDatePicker;

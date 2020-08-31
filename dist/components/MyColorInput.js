@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TextInput, withTheme, Portal, Modal, Button } from 'react-native-paper';
 import { View, TouchableOpacity } from 'react-native';
 import { ColorPicker, fromHsv } from 'react-native-color-picker';
-const MyColorInput = React.forwardRef(({ ...props }, ref) => {
+export const MyColorInput = React.forwardRef(({ ...props }, ref) => {
     const [visible, setVisible] = useState(false);
     const [color, setColor] = useState(props.defaultValue || "#ff0000");
     const [selectedColor, setSelectedColor] = useState(props.defaultValue || "#ff0000");

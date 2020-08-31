@@ -1,6 +1,6 @@
 {
   "name": "@alain00/react-native-simple-form",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple form for react native",
   "main": "dist/index.js",
   "author": "<ilpadronexd@gmail.com>",
@@ -15,19 +15,25 @@
   "dependencies": {
     "@alan/react-native-simple-form": "git+https://github.com/Alain00/react-native-simple-form.git",
     "@expo/vector-icons": "^10.2.1",
+    "@react-native-community/datetimepicker": "^3.0.1",
     "@react-navigation/native": "^5.7.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.7.0",
     "react-native": "^0.63.2",
     "react-native-animatable": "^1.3.3",
+    "react-native-calendars": "^1.343.0",
     "react-native-color-picker": "^0.6.0-rc.2",
+    "react-native-gesture-handler": "^1.7.0",
+    "react-native-modal": "^11.5.6",
     "react-native-paper": "^4.0.1",
     "react-native-picker-select": "^8.0.0",
     "typescript": "^4.0.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.48",
-    "@types/react-native": "^0.63.11"
+    "@types/react-native": "^0.63.11",
+    "@types/react-native-calendars": "^1.20.10",
+    "react-test-renderer": "^16.13.1"
   }
 }
