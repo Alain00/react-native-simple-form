@@ -3,6 +3,8 @@ on:
   push:
     tags:
       - 'v*'
+    branches:
+      - master
 jobs:
   publish:
     runs-on: "ubuntu-latest"
@@ -13,17 +15,10 @@ jobs:
           node-version: '12.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm i
-      - run: npm version from-git --tags
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      # Setup .npmrc file to publish to GitHub Packages
-      - uses: actions/setup-node@v1
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@master
         with:
-          registry-url: 'https://npm.pkg.github.com'
-          # Defaults to the user or organization that owns the workflow file
-          scope: '@alain00'
-      # Publish to GitHub Packages
-      - run: npm publish
+          publish: npm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
