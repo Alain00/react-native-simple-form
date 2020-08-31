@@ -1,6 +1,6 @@
 {
   "name": "@alain00/react-native-simple-form",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple form for react native",
   "main": "dist/index.js",
   "author": "<ilpadronexd@gmail.com>",
